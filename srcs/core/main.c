@@ -32,6 +32,11 @@ int		strtoulli(char *str, unsigned long long int *ptr)
 		}
 		i++;
 	}
+	if (*ptr == 0)
+	{
+		ft_printf("Can't have 0 as a value\n");
+		return (0);
+	}
 	return (1);
 }
 
