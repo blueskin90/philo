@@ -18,7 +18,7 @@ LIBS = ./libs/libft/libft.a \
 
 INCLUDES = -I ./includes/ -I ./libs/libft/includes/ -I ./libs/ft_printf/includes/
 
-FLAGS = -Wall -Wextra -Werror -Ofast -fsanitize=address
+FLAGS = -Wall -Wextra -Werror -fsanitize=address -g3
 
 OBJS = $(addprefix objs/, $(addsuffix .o, \
 		$(addprefix core/, \
