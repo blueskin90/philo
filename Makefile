@@ -23,6 +23,11 @@ FLAGS = -Wall -Wextra -Werror -fsanitize=address -g3
 OBJS = $(addprefix objs/, $(addsuffix .o, \
 		$(addprefix core/, \
 			main \
+			env \
+			dump \
+			) \
+		$(addprefix utils/, \
+			utils \
 			) \
 )) 
 
@@ -45,6 +50,7 @@ objs/%.o: srcs/%.c
 
 objs:
 	@mkdir -p objs/core
+	@mkdir -p objs/utils
 
 clean:
 #	@	make -C ./libs/libft clean

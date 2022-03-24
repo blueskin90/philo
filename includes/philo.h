@@ -43,4 +43,15 @@ pthread_mutex_destroy, pthread_mutex_lock,
 pthread_mutex_unlock
 */
 
+int         ft_is_whitespace(char c);
+void        ft_bzero(void *ptr, size_t size);
+int         strtoulli(char *str, unsigned long long int *ptr);
+
+void        env_init(t_env *env);
+void        free_env(t_env *env);
+int         alloc_env(t_env *env);
+
+void        dump_env(t_env *env);
+void        dump_philos(t_env *env);
+
 #endif
